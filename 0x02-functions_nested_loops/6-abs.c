@@ -1,25 +1,20 @@
 #include "main.h"
 
 /**
- * print_line - Draws a straight line according to parameter
- * @n: The number of lines to draw
- * Return: empty
+ * _abs - Computes the absolute value of an integer.
+ * @c: The number to be computed.
+ * Return: Absolute value of number or zero
  */
 
-void  print_line(int n)
-{
-int x;
+int _abs(int c)
 
-if (n <= 0)
 {
-_putchar('\n');
-}
-else
+if (c < 0)
 {
-for (x = 0; x < n; x++)
-{
-_putchar(95);
+int abs_val;
+
+abs_val = c * -1;
+return (abs_val);
 }
-_putchar('\n');
-}
+return (c);
 }
